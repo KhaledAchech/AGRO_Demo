@@ -1,15 +1,20 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ApplicationManager
     - CFX_AutoDestructShuriken
     - CameraController
     - CameraFollow
     - LookAtMouse
+    - MainMenu
+    - NewPlayer
+    - PanelManager
     - PlayerMovement
     - PointAndShoot
     - RayGun
     - RingScript
     - ShotBehavior
+    - TiltWindow
     - VolumetricLines.VolumetricLineBehavior
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
@@ -57,11 +62,182 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.EventSystems.TouchInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
+    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.Slider
+    - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
+    - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Layout Groups.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11350}
+    - Class: 114
+      Script: {instanceID: 11668}
+    - Class: 114
+      Script: {instanceID: 11716}
+    - Class: 114
+      Script: {instanceID: 11732}
+    - Class: 114
+      Script: {instanceID: 11828}
+    - Class: 114
+      Script: {instanceID: 11942}
+    - Class: 114
+      Script: {instanceID: 12436}
+    - Class: 114
+      Script: {instanceID: 13204}
+    - Class: 114
+      Script: {instanceID: 13368}
+    - Class: 114
+      Script: {instanceID: 13598}
+    - Class: 114
+      Script: {instanceID: 14098}
+    - Class: 114
+      Script: {instanceID: 14740}
+    - Class: 114
+      Script: {instanceID: 26350}
+    - Class: 114
+      Script: {instanceID: 52974}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Menu 3D.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11350}
+    - Class: 114
+      Script: {instanceID: 11668}
+    - Class: 114
+      Script: {instanceID: 11716}
+    - Class: 114
+      Script: {instanceID: 11732}
+    - Class: 114
+      Script: {instanceID: 12174}
+    - Class: 114
+      Script: {instanceID: 12436}
+    - Class: 114
+      Script: {instanceID: 13204}
+    - Class: 114
+      Script: {instanceID: 14098}
+    - Class: 114
+      Script: {instanceID: 14740}
+    - Class: 114
+      Script: {instanceID: 14774}
+    - Class: 114
+      Script: {instanceID: 14802}
+    - Class: 114
+      Script: {instanceID: 26344}
+    - Class: 114
+      Script: {instanceID: 26350}
+    - Class: 114
+      Script: {instanceID: 26362}
+    - Class: 114
+      Script: {instanceID: 39950}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Prototype.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -130,8 +306,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11928}
     - Class: 114
       Script: {instanceID: 12004}
-    - Class: 114
-      Script: {instanceID: 12174}
     - Class: 114
       Script: {instanceID: 12332}
     - Class: 114
@@ -1267,7 +1441,87 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 7e6f3cec810b51366c6e857ffaf3cdbc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PanelManager
+  - hash:
+      serializedVersion: 2
+      Hash: 51f8d470cac09a8e32d2d547963d8efc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ResizePanel
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ActiveStateToggler
+  - hash:
+      serializedVersion: 2
+      Hash: a72b59fc029116362b3317d54b5ec7e0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TiltWindow
+  - hash:
+      serializedVersion: 2
+      Hash: 699582968bf572a4f5f4654f266dca73
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DropMe
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShowSliderValue
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DragPanel
+  - hash:
+      serializedVersion: 2
+      Hash: 369421eaa26a31b7617fb067c6e27c2e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DragMe
+  - hash:
+      serializedVersion: 2
+      Hash: 09fe53f599e1b043b2ab790cced57532
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScrollDetailTexture
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ApplicationManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChangeColor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NewPlayer
   platform: 19
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/khale/Desktop/StarFoxClone_PrototypeV0.3/StarFoxClone_DEMO.exe
+  - Assets/Scenes/Menu 3D.unity
+  - Assets/Scenes/Prototype.unity
+  - Assets/Scenes/Layout Groups.unity
+  playerPath: C:/Users/khale/Desktop/Projet 2 Dev Log/Sprint 2 History/StarFoxClone_PrototypeV0.4/StarFoxClone_DEMO.exe

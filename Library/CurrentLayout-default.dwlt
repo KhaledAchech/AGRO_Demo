@@ -113,10 +113,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 741
-  m_MinSize: {x: 708, y: 492}
-  m_MaxSize: {x: 18003, y: 14042}
+  m_MinSize: {x: 709, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 313
+  controlID: 12446
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,10 +138,10 @@ MonoBehaviour:
     y: 0
     width: 887
     height: 741
-  m_MinSize: {x: 201, y: 442}
-  m_MaxSize: {x: 4001, y: 8042}
+  m_MinSize: {x: 201, y: 421}
+  m_MaxSize: {x: 4001, y: 8021}
   vertical: 1
-  controlID: 314
+  controlID: 12447
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 228
+  controlID: 12472
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -427,9 +427,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -12.291312, y: 1.7987857, z: 4.266322}
+    m_Target: {x: 23.099392, y: -28.060638, z: 0}
     speed: 2
-    m_Value: {x: -12.291312, y: 1.7987857, z: 4.266322}
+    m_Value: {x: 23.099392, y: -28.060638, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -475,13 +475,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.14618118, y: 0.719201, z: -0.15915565, w: -0.66040975}
+    m_Target: {x: -0.11253954, y: 0.025321206, z: -0.0028332965, w: -0.9933682}
     speed: 2
-    m_Value: {x: -0.14618118, y: 0.719201, z: -0.15915565, w: -0.66040975}
+    m_Value: {x: -0.11253954, y: 0.025321208, z: -0.0028332965, w: -0.99336827}
   m_Size:
-    m_Target: 12.761281
+    m_Target: 7.78977
     speed: 2
-    m_Value: 12.761281
+    m_Value: 7.78977
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -563,7 +563,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0427fcff2027fcff8428fcff3efbffff
+      m_ExpandedIDs: b89ffdffd69ffdff18a1fdffc4a1fdff70a4fdff92b3fdff1eb9fdff10bafdffc0bcfdff66bffdffd0c3fdfff431feffb233feff0634feffb236feffbe36feffe636feffbc39feffce39feffe039feff5e40feff6243feff3645feff5045fefffa47feff4c48feff5c48feff8448feff624dfefff04ffeff0a50feff1451feff2e51feff1852feff4c58feff6659feff705afeffb862ffff3efbffff40550000446a0000746a0000ac6a00002a8600007a860000c6870000f68700002e880000b6910000d8910000fc910000ceae000000af000038af00000ec700003ec7000076c700002ece000050ce000074ce00008ace0000c2ce0000dace0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -626,20 +626,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/JMO Assets/WarFX/_Effects/Bullet Impacts
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 46
   m_LastFolders:
-  - Assets/JMO Assets/WarFX/_Effects/Bullet Impacts
+  - Assets/Scenes
   m_LastFoldersGridSize: 46
   m_LastProjectPath: C:\Users\khale\Desktop\Unity Projects\StarFoxClone-Demo
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 437}
-    m_SelectedIDs: c8400000
-    m_LastClickedID: 16584
-    m_ExpandedIDs: 00000000903f00001a400000ce400000f0410000f2410000c8440000d44500005447000082470000d84b0000124d0000764e00007c4e0000144f0000b24f000000ca9a3b
+    scrollPos: {x: 0, y: 45}
+    m_SelectedIDs: c23f0000
+    m_LastClickedID: 16322
+    m_ExpandedIDs: 00000000903f0000ce400000f0410000f2410000d445000082470000d84b0000124d0000764e00007c4e0000144f0000b24f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -667,7 +667,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000903f00001a400000ce400000f0410000f2410000c8440000d44500005447000082470000d84b0000124d0000764e00007c4e0000144f0000b24f000000ca9a3b
+    m_ExpandedIDs: 00000000903f0000ce400000f0410000f2410000d445000082470000d84b0000124d0000764e00007c4e0000144f0000b24f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -719,7 +719,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 116}
     m_GridSize: 46
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 174
