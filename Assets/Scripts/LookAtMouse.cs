@@ -18,7 +18,6 @@ public class LookAtMouse : MonoBehaviour
             {
                 Vector3 direction = hitInfo.point - guns.position;
                 guns.rotation = Quaternion.LookRotation(direction);
-                Debug.Log("hit !!!");
             }
         }
     }
