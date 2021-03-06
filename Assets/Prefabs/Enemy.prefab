@@ -202,9 +202,10 @@ GameObject:
   - component: {fileID: 2511735494907199893}
   - component: {fileID: 2511735494907199889}
   - component: {fileID: 3408332258274652447}
+  - component: {fileID: 156423552}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Target
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -323,6 +324,20 @@ MonoBehaviour:
   startTimeBtwShots: 2
   projectile: {fileID: 136330, guid: 943c84f4e8058f443a12f08597dbb710, type: 3}
   player: {fileID: 0}
+--- !u!114 &156423552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2511735494907199894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ff2a91ba804c5f4ab692919d6ed790b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 100
+  collisionExplosion: {fileID: 100008, guid: 1ae4db7b36e51124b89d2b32303a7a0b, type: 3}
 --- !u!1001 &2511735493488034171
 PrefabInstance:
   m_ObjectHideFlags: 0

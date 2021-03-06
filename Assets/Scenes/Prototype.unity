@@ -2696,6 +2696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootRate: 0.1
   m_shotPrefab: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+  HitWithLaser: 2
 --- !u!43 &74276413
 Mesh:
   m_ObjectHideFlags: 0
@@ -22004,6 +22005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootRate: 0.1
   m_shotPrefab: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+  HitWithLaser: 2
 --- !u!43 &714745592
 Mesh:
   m_ObjectHideFlags: 0
@@ -56830,6 +56832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootRate: 0.1
   m_shotPrefab: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+  HitWithLaser: 2
 --- !u!1 &1542354159
 GameObject:
   m_ObjectHideFlags: 0
@@ -64884,6 +64887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootRate: 0.1
   m_shotPrefab: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+  HitWithLaser: 2
 --- !u!33 &48414450383627785
 MeshFilter:
   m_ObjectHideFlags: 0

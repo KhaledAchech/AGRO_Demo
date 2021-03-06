@@ -8,6 +8,7 @@ public class ShotBehavior : MonoBehaviour
     public Vector3 m_target;
     public GameObject collisionExplosion;
     public float speed;
+    //public float HitWithLaser;
     
 
 
@@ -28,7 +29,16 @@ public class ShotBehavior : MonoBehaviour
         }
 
     }
-
+/*
+    void OnTriggerEnter(Collider other) 
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            EnemyHealth enemyHealthScript = other.transform.GetComponent<EnemyHealth>();
+            enemyHealthScript.DeductHealth(HitWithLaser);
+        }
+    }
+*/
     public void setTarget(Vector3 target)
     {
         m_target = target;

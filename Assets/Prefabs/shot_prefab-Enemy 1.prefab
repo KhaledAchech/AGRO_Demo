@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3072088970697578512}
   - component: {fileID: 3072088970697553104}
   - component: {fileID: 3072088970697991318}
+  - component: {fileID: 7639336363591318593}
   m_Layer: 0
   m_Name: shot_prefab-Enemy 1
   m_TagString: Untagged
@@ -177,3 +178,17 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &7639336363591318593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3072088970692025914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1d11ae33b254a344989573238840f66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionExplosion: {fileID: 100014, guid: 5332791ebce075d4a9e56f4581e7fb47, type: 3}
+  speed: 300

@@ -116,6 +116,7 @@ MonoBehaviour:
   m_target: {x: 0, y: 0, z: 0}
   collisionExplosion: {fileID: 100014, guid: 5332791ebce075d4a9e56f4581e7fb47, type: 3}
   speed: 700
+  HitWithLaser: 50
 --- !u!108 &10825254
 Light:
   m_ObjectHideFlags: 0

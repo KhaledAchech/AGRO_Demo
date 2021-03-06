@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponents", "NavMes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponentsTestsPlaymode", "NavMeshComponentsTestsPlaymode.csproj", "{B0F5441F-0C00-9491-A020-97089FB744C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{7C582464-E483-4BCF-480B-93EEEE394EE8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponentsEditor", "NavMeshComponentsEditor.csproj", "{7FE7B227-172A-0D7A-407A-F15BEAF224FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{7C582464-E483-4BCF-480B-93EEEE394EE8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponentsTestsEditmode", "NavMeshComponentsTestsEditmode.csproj", "{B799D87D-1350-94D2-30A3-D1A05C39B325}"
 EndProject
@@ -39,14 +39,14 @@ Global
 		{B0F5441F-0C00-9491-A020-97089FB744C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0F5441F-0C00-9491-A020-97089FB744C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0F5441F-0C00-9491-A020-97089FB744C6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7C582464-E483-4BCF-480B-93EEEE394EE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C582464-E483-4BCF-480B-93EEEE394EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C582464-E483-4BCF-480B-93EEEE394EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C582464-E483-4BCF-480B-93EEEE394EE8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7FE7B227-172A-0D7A-407A-F15BEAF224FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7FE7B227-172A-0D7A-407A-F15BEAF224FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FE7B227-172A-0D7A-407A-F15BEAF224FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FE7B227-172A-0D7A-407A-F15BEAF224FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C582464-E483-4BCF-480B-93EEEE394EE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C582464-E483-4BCF-480B-93EEEE394EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C582464-E483-4BCF-480B-93EEEE394EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C582464-E483-4BCF-480B-93EEEE394EE8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B799D87D-1350-94D2-30A3-D1A05C39B325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B799D87D-1350-94D2-30A3-D1A05C39B325}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B799D87D-1350-94D2-30A3-D1A05C39B325}.Release|Any CPU.ActiveCfg = Release|Any CPU
