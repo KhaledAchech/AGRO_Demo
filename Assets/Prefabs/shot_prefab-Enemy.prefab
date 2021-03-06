@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionExplosion: {fileID: 100014, guid: 5332791ebce075d4a9e56f4581e7fb47, type: 3}
-  speed: 120
+  speed: 300
 --- !u!1001 &3072088970691889840
 PrefabInstance:
   m_ObjectHideFlags: 0
