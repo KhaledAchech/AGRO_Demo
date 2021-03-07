@@ -109,8 +109,8 @@ public class UIBarScript : MonoBehaviour {
 		Value = Mathf.Clamp(Value,0f,1f);//make sure the Value is between 0 and 1
 
 		//move the Filler position to display the Correct Percent
-		RectTransform FRT = (Filler.transform as RectTransform);
-		FRT.position = Vector3.Lerp (Mask0,Mask1,Value);
+		//RectTransform FRT = (Filler.transform as RectTransform);
+		//FRT.position = Vector3.Lerp (Mask0,Mask1,Value);
 
 		//set the color for the Fill Image, and the Text Objects
 		Filler.GetComponent<Image>().color = HPColor.Evaluate(Value);

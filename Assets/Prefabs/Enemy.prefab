@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.31}
+  m_AnchoredPosition: {x: 0, y: 2.020001}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &566147305
@@ -232,7 +232,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2511735494907199894}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: 28723f10c2a8e094a9351e892f5271b8, type: 3}
 --- !u!23 &2511735494907199892
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -251,7 +251,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 797bf488c630d4c4da4076a24ec6a432, type: 2}
+  - {fileID: 2100000, guid: 2954963d08a0b044e8f84eece7126e53, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -320,8 +320,8 @@ MonoBehaviour:
   stoppingDistance: 10
   retreatDistance: 10
   ofset: {x: 0, y: 5, z: 10}
-  timeBtwShots: 0
-  startTimeBtwShots: 2
+  timeBtwShots: 1
+  startTimeBtwShots: 1
   projectile: {fileID: 136330, guid: 943c84f4e8058f443a12f08597dbb710, type: 3}
   player: {fileID: 0}
 --- !u!114 &156423552
@@ -336,8 +336,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ff2a91ba804c5f4ab692919d6ed790b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 100
+  enemyMaxHealth: 100
   collisionExplosion: {fileID: 100008, guid: 1ae4db7b36e51124b89d2b32303a7a0b, type: 3}
+  EnemyHpBar: {fileID: 0}
 --- !u!1001 &2511735493488034171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -419,6 +420,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CurveBar1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3727856576656800887, guid: 32fa35c6fc2bec347b6ab2f1d8094a8f,
+        type: 3}
+      propertyPath: NewValue
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32fa35c6fc2bec347b6ab2f1d8094a8f, type: 3}
