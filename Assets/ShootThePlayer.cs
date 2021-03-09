@@ -11,13 +11,19 @@ public class ShootThePlayer : MonoBehaviour
 
     private Vector3 target;
     private Transform player;
+    
+
+    public float HitWithLaser = 1;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        
 
         target = new Vector3(player.position.x, player.position.y, player.position.z);
+
+        
     } 
 
 
@@ -43,7 +49,12 @@ public class ShootThePlayer : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            /*PlayerAttributs playerHealth = other.GetComponent<PlayerAttributs>();
+            Debug.Log("am here");
+            playerHealth.DeductHealth(HitWithLaser);
+            Debug.Log("am here now");*/
             explode();
+            
         }
     }
     
@@ -52,6 +63,10 @@ public class ShootThePlayer : MonoBehaviour
         if (collisionExplosion  != null) {
             GameObject explosion = (GameObject)Instantiate(
                 collisionExplosion, transform.position, transform.rotation);
+            PlayerAttributs playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttributs>();
+            Debug.Log("am here");
+            playerHealth.DeductHealth(HitWithLaser);
+            Debug.Log("am here now");
             Destroy(gameObject);
             Destroy(explosion, 1f);
         }

@@ -84,6 +84,8 @@
      <Compile Include="Assets\MainMenu.cs" />
      <Compile Include="Assets\NewPlayer.cs" />
      <Compile Include="Assets\PauseMenu.cs" />
+     <Compile Include="Assets\PlayerAttributs.cs" />
+     <Compile Include="Assets\PlayerStats.cs" />
      <Compile Include="Assets\RingScript.cs" />
      <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
      <Compile Include="Assets\Scripts\ApplicationManager.cs" />
@@ -94,6 +96,7 @@
      <Compile Include="Assets\Scripts\DragPanel.cs" />
      <Compile Include="Assets\Scripts\DropMe.cs" />
      <Compile Include="Assets\Scripts\EnemyAi.cs" />
+     <Compile Include="Assets\Scripts\LockOnSysteme.cs" />
      <Compile Include="Assets\Scripts\LookAtMouse.cs" />
      <Compile Include="Assets\Scripts\MusicManager.cs" />
      <Compile Include="Assets\Scripts\PanelManager.cs" />

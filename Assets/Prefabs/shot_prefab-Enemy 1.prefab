@@ -192,3 +192,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionExplosion: {fileID: 100014, guid: 5332791ebce075d4a9e56f4581e7fb47, type: 3}
   speed: 300
+  playerStats: {fileID: 0}
+  HitWithLaser: 5

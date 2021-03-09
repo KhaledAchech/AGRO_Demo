@@ -18,11 +18,14 @@ public class EnemyAi : MonoBehaviour
     public GameObject projectile;
     public Transform player;
 
+    private bool shoot;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
         timeBtwShots = startTimeBtwShots;
+        shoot = true;
     }
 
     void Update()
@@ -30,17 +33,20 @@ public class EnemyAi : MonoBehaviour
         if (Vector3.Distance(transform.position, player.position) < stoppingDistance)
         {
             transform.position = Vector3.MoveTowards(transform.position, player.position + ofset, speed * Time.deltaTime);
+            shoot = true;
         }
         else if (Vector3.Distance(transform.position, player.position) > stoppingDistance && Vector3.Distance(transform.position, player.position) > retreatDistance)
         {
             transform.position = this.transform.position;
+            shoot = false;
         }
         else if (Vector3.Distance(transform.position, player.position)  < retreatDistance)
         {
             transform.position = Vector3.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
+            shoot = true;
         }
 
-        if (timeBtwShots <= 0 )
+        if (timeBtwShots <= 0 && shoot)
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
             timeBtwShots = startTimeBtwShots;
