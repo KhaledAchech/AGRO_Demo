@@ -30,7 +30,7 @@ public class PlayerAttributs : MonoBehaviour
         
         PlayerHpBar.UpdateValue(HP,MaxHP);
         HpBar.setHealth(HP);
-        Debug.Log(playerHealth);
+        //Debug.Log(playerHealth);
         if (playerHealth == 0) 
         { 
             PlayerDead();

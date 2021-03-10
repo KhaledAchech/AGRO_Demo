@@ -353,6 +353,11 @@ PrefabInstance:
       propertyPath: ofset.z
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 3408332258274652447, guid: 87c34fe59a256c944a5f20870b9cc1e3,
+        type: 3}
+      propertyPath: stoppingDistance
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5357333904395090188, guid: 87c34fe59a256c944a5f20870b9cc1e3,
         type: 3}
       propertyPath: m_LocalRotation.x

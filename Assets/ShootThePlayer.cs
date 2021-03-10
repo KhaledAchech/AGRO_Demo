@@ -64,9 +64,8 @@ public class ShootThePlayer : MonoBehaviour
             GameObject explosion = (GameObject)Instantiate(
                 collisionExplosion, transform.position, transform.rotation);
             PlayerAttributs playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttributs>();
-            Debug.Log("am here");
+            //Debug.Log("am here");
             playerHealth.DeductHealth(HitWithLaser);
-            Debug.Log("am here now");
             Destroy(gameObject);
             Destroy(explosion, 1f);
         }

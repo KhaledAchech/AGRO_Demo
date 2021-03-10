@@ -87,6 +87,7 @@
      <Compile Include="Assets\PlayerAttributs.cs" />
      <Compile Include="Assets\PlayerStats.cs" />
      <Compile Include="Assets\RingScript.cs" />
+     <Compile Include="Assets\RocketBehavior.cs" />
      <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
      <Compile Include="Assets\Scripts\ApplicationManager.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
@@ -104,6 +105,7 @@
      <Compile Include="Assets\Scripts\PointAndShoot.cs" />
      <Compile Include="Assets\Scripts\RayGun.cs" />
      <Compile Include="Assets\Scripts\ResizePanel.cs" />
+     <Compile Include="Assets\Scripts\RocketScript.cs" />
      <Compile Include="Assets\Scripts\ScoringSystem.cs" />
      <Compile Include="Assets\Scripts\ScrollDetailTexture.cs" />
      <Compile Include="Assets\Scripts\ShotBehavior.cs" />
