@@ -11,6 +11,10 @@ public class LockOnSysteme : MonoBehaviour
     public GameObject CrossHair;
     public GameObject gunMuzzles;
     public GameObject RocketLauncher;
+
+    public GameObject SpawnEffect;
+    //public Transform SpawnPosition;
+    public float timeToWait;
     
     public Transform target;
 
@@ -29,6 +33,14 @@ public class LockOnSysteme : MonoBehaviour
         }
     }
 
+    IEnumerator ExecuteAfterTime(float timeToWait)
+    {
+        
+        yield return new WaitForSeconds(timeToWait);
+     // Code to execute after the delay
+        gunMuzzles.SetActive(false);
+        RocketLauncher.SetActive(true);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -67,12 +79,16 @@ public class LockOnSysteme : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Space) && !locked && enemiesOnScreen.Count > 0)
         {
+            //SpawnEffect.SetActive(true);
+            //StartCoroutine(ExecuteAfterTime(timeToWait));
             i = 0;
             locked = true;
             MissleCrossHair.SetActive(true);
             CrossHair.SetActive(false);
-            gunMuzzles.SetActive(false);
-            RocketLauncher.SetActive(true);
+            SpawnEffect.SetActive(true);
+            StartCoroutine(ExecuteAfterTime(timeToWait));
+            //gunMuzzles.SetActive(false);
+            //RocketLauncher.SetActive(true);
         }
         else if (Input.GetKeyDown(KeyCode.Space) && locked)
         {

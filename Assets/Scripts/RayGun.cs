@@ -14,12 +14,18 @@ public class RayGun : MonoBehaviour
 
     public float HitWithLaser = 25;
 
+    public AudioSource LeaserShot;
 
+    void Start()
+    {
+        LeaserShot = GetComponent<AudioSource>();
+    }
     void Update()
     {
 
         if (Input.GetMouseButton(0))
         {
+            LeaserShot.Play();
             if (Time.time > m_shootRateTimeStamp)
             {
                 shootRay();

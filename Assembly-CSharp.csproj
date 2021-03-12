@@ -36,6 +36,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\52SpecialEffectPack\Animation&amp;Script\csAnimationSpin.cs" />
+     <Compile Include="Assets\52SpecialEffectPack\Animation&amp;Script\csDestroyEffect.cs" />
+     <Compile Include="Assets\52SpecialEffectPack\Animation&amp;Script\csMouseOrbit.cs" />
+     <Compile Include="Assets\52SpecialEffectPack\Animation&amp;Script\csParticleMove.cs" />
+     <Compile Include="Assets\52SpecialEffectPack\Animation&amp;Script\csShowAllEffect.cs" />
+     <Compile Include="Assets\52SpecialEffectPack\EffectEditor\ShurikenEffectEditor\csShurikenEffectChanger.cs" />
+     <Compile Include="Assets\52SpecialEffectPack\EffectEditor\ShurikenEffectEditor\csShurikenEffectEditor.cs" />
      <Compile Include="Assets\BillBoard.cs" />
      <Compile Include="Assets\CameraController.cs" />
      <Compile Include="Assets\CodeMonkey\Assets.cs" />
@@ -113,6 +120,7 @@
      <Compile Include="Assets\Scripts\TiltWindow.cs" />
      <Compile Include="Assets\ShootTheEnemy.cs" />
      <Compile Include="Assets\ShootThePlayer.cs" />
+     <Compile Include="Assets\SpawnEffect.cs" />
      <Compile Include="Assets\UIBars\Scripts\ControlBar.cs" />
      <Compile Include="Assets\UIBars\Scripts\CriteriaRule.cs" />
      <Compile Include="Assets\UIBars\Scripts\UIBarScript.cs" />

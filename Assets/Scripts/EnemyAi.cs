@@ -18,6 +18,9 @@ public class EnemyAi : MonoBehaviour
     public GameObject projectile;
     public Transform player;
 
+    public AudioSource LeaserShot;
+
+
     private bool shoot;
 
     void Start()
@@ -26,6 +29,7 @@ public class EnemyAi : MonoBehaviour
 
         timeBtwShots = startTimeBtwShots;
         shoot = true;
+        LeaserShot = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -49,6 +53,7 @@ public class EnemyAi : MonoBehaviour
         if (timeBtwShots <= 0 && shoot)
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
+            LeaserShot.Play();
             timeBtwShots = startTimeBtwShots;
         }
         else
