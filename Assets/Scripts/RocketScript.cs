@@ -12,8 +12,11 @@ public class RocketScript : MonoBehaviour
 
     Vector3 rocketTarget;
 
+    public AudioSource RocketLaunch;
+
     void Start()
     {
+        RocketLaunch = GetComponent<AudioSource>();
         
     }
 
@@ -24,6 +27,7 @@ public class RocketScript : MonoBehaviour
         rocketTarget = lockOnSystem.target.position;
         if (Input.GetMouseButtonDown(0))
         {
+            RocketLaunch.Play();
             launchRocket();
         }
 

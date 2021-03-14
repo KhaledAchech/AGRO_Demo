@@ -7,11 +7,12 @@ public class ScoringSystem : MonoBehaviour
 {
    public GameObject scoreText;
    public static int Score;
-   //public AudioSource collectSound;
+   
 
    void Update()
    {
        //collectSound.play();
        scoreText.GetComponent<Text>().text = "SCORE: " + Score;
+       
    }
 }

@@ -34,8 +34,20 @@ public class PlayerMovement : MonoBehaviour
     public ParticleSystem barrel;
     public ParticleSystem stars;
 
+    [Header("Sound Effects")]
+    public AudioSource BarrelRollSound;
+    public AudioSource BoostStart;
+    public AudioSource BoostLoop;
+    public AudioSource BoostEnd;
+    public AudioSource[] sounds;
+
     void Start()
     {
+        sounds = GetComponents<AudioSource>();
+        BarrelRollSound = sounds[0];
+        BoostStart = sounds[1];
+        BoostLoop = sounds[2];
+        BoostEnd = sounds[3];
         playerModel = transform.GetChild(0);
         SetSpeed(forwardSpeed);
     }
@@ -49,11 +61,13 @@ public class PlayerMovement : MonoBehaviour
         RotationLook(h,v, lookSpeed);
         HorizontalLean(playerModel, h, 80, .1f);
 
-        if (Input.GetButtonDown("Action"))
+        if (Input.GetButtonDown("Action"))  
             Boost(true);
+        
 
         if (Input.GetButtonUp("Action"))
             Boost(false);
+            
 
         if (Input.GetButtonDown("Fire3"))
             Break(true);
@@ -64,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("TriggerL") || Input.GetButtonDown("TriggerR"))
         {
             int dir = Input.GetButtonDown("TriggerL") ? -1 : 1;
+            BarrelRollSound.Play();
             QuickSpin(dir);
         }
 
@@ -146,11 +161,15 @@ public class PlayerMovement : MonoBehaviour
         if (state)
         {
             cameraParent.GetComponentInChildren<CinemachineImpulseSource>().GenerateImpulse();
+            BoostStart.Play();
+            if(!BoostLoop.isPlaying) BoostLoop.Play();
             trail.Play();
             circle.Play();
         }
         else
         {
+            BoostLoop.Stop();
+            BoostEnd.Play();
             trail.Stop();
             circle.Stop();
         }
@@ -176,7 +195,7 @@ public class PlayerMovement : MonoBehaviour
         SetCameraZoom(zoom, .4f);
     }
 
-    void Break(bool state)
+    public void Break(bool state)
     {
         float speed = state ? forwardSpeed / 3 : forwardSpeed;
         float zoom = state ? 3 : 0;

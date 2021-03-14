@@ -45,6 +45,7 @@
      <Compile Include="Assets\52SpecialEffectPack\EffectEditor\ShurikenEffectEditor\csShurikenEffectEditor.cs" />
      <Compile Include="Assets\BillBoard.cs" />
      <Compile Include="Assets\CameraController.cs" />
+     <Compile Include="Assets\CinemachineShake.cs" />
      <Compile Include="Assets\CodeMonkey\Assets.cs" />
      <Compile Include="Assets\CodeMonkey\CMDebug.cs" />
      <Compile Include="Assets\CodeMonkey\MonoBehaviours\CameraFollow.cs" />
@@ -72,6 +73,7 @@
      <Compile Include="Assets\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
      <Compile Include="Assets\DOTween\Modules\DOTweenModuleUtils.cs" />
      <Compile Include="Assets\EnemyHealth.cs" />
+     <Compile Include="Assets\ExplosionEffect.cs" />
      <Compile Include="Assets\HealthBar.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
@@ -91,6 +93,7 @@
      <Compile Include="Assets\MainMenu.cs" />
      <Compile Include="Assets\NewPlayer.cs" />
      <Compile Include="Assets\PauseMenu.cs" />
+     <Compile Include="Assets\PlayRocketExplosion.cs" />
      <Compile Include="Assets\PlayerAttributs.cs" />
      <Compile Include="Assets\PlayerStats.cs" />
      <Compile Include="Assets\RingScript.cs" />

@@ -23,8 +23,17 @@ public class LockOnSysteme : MonoBehaviour
 
     public static int i = 0;
 
+    public AudioSource RocketLauncherOn;
+    public AudioSource RocketLauncherOff;
+    public AudioSource[] sounds; 
+    //private int savei = i;
+
+    public PlayerMovement playerScript;
     void Start()
     {
+        sounds = GetComponents<AudioSource>();
+        RocketLauncherOn = sounds[0];
+        RocketLauncherOff = sounds[1];
         MissleCrossHair.SetActive(false);
         GameObject[] allEnemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject e in allEnemies)
@@ -40,6 +49,7 @@ public class LockOnSysteme : MonoBehaviour
      // Code to execute after the delay
         gunMuzzles.SetActive(false);
         RocketLauncher.SetActive(true);
+        //playerScript.Break(true);
     }
     // Update is called once per frame
     void Update()
@@ -62,11 +72,13 @@ public class LockOnSysteme : MonoBehaviour
                 {
                     locked = false;
                     enemiesOnScreen.Remove(enemiesInGame[i]);
-                    target = null;
+                    //target = null;
                     MissleCrossHair.SetActive(false);
                     CrossHair.SetActive(true);
                     gunMuzzles.SetActive(true);
                     RocketLauncher.SetActive(false);
+                    RocketLauncherOff.Play();
+                    //playerScript.Break(false);
                 }
                 }
             }
@@ -81,11 +93,12 @@ public class LockOnSysteme : MonoBehaviour
         {
             //SpawnEffect.SetActive(true);
             //StartCoroutine(ExecuteAfterTime(timeToWait));
-            i = 0;
+            //i = 0;
             locked = true;
             MissleCrossHair.SetActive(true);
             CrossHair.SetActive(false);
             SpawnEffect.SetActive(true);
+            RocketLauncherOn.Play();
             StartCoroutine(ExecuteAfterTime(timeToWait));
             //gunMuzzles.SetActive(false);
             //RocketLauncher.SetActive(true);
@@ -93,12 +106,14 @@ public class LockOnSysteme : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Space) && locked)
         {
             locked = false;
-            i = 0;
-            target = null;
+            //i = 0;
+            //target = null;
             MissleCrossHair.SetActive(false);
             CrossHair.SetActive(true);
             gunMuzzles.SetActive(true);
             RocketLauncher.SetActive(false);
+            RocketLauncherOff.Play();
+            //playerScript.Break(false);
         }
 
         if (Input.GetKeyDown(KeyCode.Tab) && locked)
@@ -164,6 +179,8 @@ public class LockOnSysteme : MonoBehaviour
                 CrossHair.SetActive(true);
                 gunMuzzles.SetActive(true);
                 RocketLauncher.SetActive(false);
+                RocketLauncherOff.Play();
+                //playerScript.Break(false);
             }
     }
 }

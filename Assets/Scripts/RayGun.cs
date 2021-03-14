@@ -14,21 +14,27 @@ public class RayGun : MonoBehaviour
 
     public float HitWithLaser = 25;
 
-    public AudioSource LeaserShot;
+    public AudioSource LaserShot;
+    public AudioSource LaserImpact;
+    public AudioSource LaserImpactonWall;
+    public AudioSource[] sounds;
 
     void Start()
     {
-        LeaserShot = GetComponent<AudioSource>();
+        sounds = GetComponents<AudioSource>();
+        LaserShot = sounds[0];
+        LaserImpact = sounds[1];
+        LaserImpactonWall = sounds[2];
     }
     void Update()
     {
-
         if (Input.GetMouseButton(0))
-        {
-            LeaserShot.Play();
+        { 
+
             if (Time.time > m_shootRateTimeStamp)
             {
                 shootRay();
+                if(!LaserShot.isPlaying) LaserShot.Play();
                 m_shootRateTimeStamp = Time.time + shootRate;
             }
         }
@@ -45,8 +51,15 @@ public class RayGun : MonoBehaviour
             GameObject.Destroy(laser, 2f);
             if (hit.transform.tag == "Enemy")
             {
+            LaserImpact.Play();
+            CinemachineShake.Instance.ShakeCamera(0.8f,0.1f);
             EnemyHealth enemyHealthScript = hit.transform.GetComponent<EnemyHealth>();
             enemyHealthScript.DeductHealth(HitWithLaser);
+            }
+            else
+            {
+                CinemachineShake.Instance.ShakeCamera(0.5f,0.1f);
+                LaserImpactonWall.Play();
             }
 
 

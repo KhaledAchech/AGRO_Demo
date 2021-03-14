@@ -14,6 +14,9 @@ public class PlayerAttributs : MonoBehaviour
     
     float playerHealth;
 
+    public GameObject DeathExplosion;
+    
+
     void Start()
     {
         playerHealth = playerMaxHealth;
@@ -34,6 +37,8 @@ public class PlayerAttributs : MonoBehaviour
         if (playerHealth == 0) 
         { 
             PlayerDead();
+            GameObject death = (GameObject)Instantiate( 
+                DeathExplosion, transform.position, transform.rotation);
         }
     }
 

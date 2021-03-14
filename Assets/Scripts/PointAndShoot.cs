@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class PointAndShoot : MonoBehaviour
 {
+    public float depth = 10.0f;
+    public float speed = 1.5f;
+    Vector3 mousePos;
+    Vector3 wantedPos;
     private void Start()
     {
         Cursor.visible = false;
+        
     }
 /*
     private Vector3 target;
@@ -33,7 +38,8 @@ public class PointAndShoot : MonoBehaviour
     private void Update()
     {
         toggleCursor();
-        transform.position = Input.mousePosition;
+        transform.position = Input.mousePosition; 
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     void toggleCursor()

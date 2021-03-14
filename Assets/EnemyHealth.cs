@@ -16,6 +16,10 @@ public class EnemyHealth : MonoBehaviour
 
     public bool enemyIsDead;
 
+    public float hitWithRocket = 50f;
+
+    public GameObject EnemyExplosion;
+
     void Start()
     {
         enemyHealth = enemyMaxHealth;
@@ -27,6 +31,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (enemyIsDead)
         {
+           
             explode();
         }
     }
@@ -40,14 +45,27 @@ public class EnemyHealth : MonoBehaviour
         
         EnemyHpBar.UpdateValue(HP,MaxHP);
         HpBar.setHealth(HP);
-        Debug.Log(enemyHealth);
+        //Debug.Log(enemyHealth);
         if (enemyHealth <= 0) 
         { 
             enemyIsDead = true;
+            GameObject enemyExplosion = (GameObject)Instantiate(
+                EnemyExplosion, transform.position, transform.rotation);
             EnemyDead();
         }
     }
+    void OnTriggerEnter(Collider other) 
+    {
+        Debug.Log("am here on trigger EnemyScript");
+        if (other.tag == "Rocket")
+        {   
+            Debug.Log("am here on trigger EnemyScript");
+            DeductHealth(hitWithRocket);
+            explode();
+        }
+    }
 
+    
     void EnemyDead()
     {
         enemyIsDead = true;
@@ -59,12 +77,13 @@ public class EnemyHealth : MonoBehaviour
             GameObject explosion = (GameObject)Instantiate(
                 collisionExplosion, transform.position, transform.rotation);
             LockOnSysteme.enemiesInGame.Remove(gameObject);
-            if (LockOnSysteme.enemiesOnScreen.Contains(gameObject)) { LockOnSysteme.enemiesOnScreen.Remove(gameObject); }
+            if (LockOnSysteme.enemiesOnScreen.Contains(gameObject)) { LockOnSysteme.enemiesOnScreen.Remove(gameObject);}
             LockOnSysteme.i = 0;
             LockOnSysteme lockoff = lockSystem.GetComponent<LockOnSysteme>();
             lockoff.turnOffSystem();
             ScoringSystem.Score += 50;
             Destroy(gameObject);
+            CinemachineShake.Instance.ShakeCamera(1.5f,0.01f);
             Destroy(explosion, 1f);
         }
 
