@@ -19,6 +19,7 @@ namespace Cinemachine
         /// <summary>The path to follow</summary>
         [Tooltip("The path to follow")]
         public CinemachinePathBase m_Path;
+        public CinemachinePathBase boss_Path;
 
         /// <summary>This enum defines the options available for the update method.</summary>
         public enum UpdateMethod
@@ -60,10 +61,13 @@ namespace Cinemachine
             float speed = Application.isPlaying ? m_Speed : 0;
             if (m_UpdateMethod == UpdateMethod.Update)
                 SetCartPosition(m_Position + speed * Time.deltaTime);
+
+            
         }
 
         void LateUpdate()
         {
+            changePath();
             if (!Application.isPlaying)
                 SetCartPosition(m_Position);
             else if (m_UpdateMethod == UpdateMethod.LateUpdate)
@@ -77,6 +81,13 @@ namespace Cinemachine
                 m_Position = m_Path.StandardizeUnit(distanceAlongPath, m_PositionUnits);
                 transform.position = m_Path.EvaluatePositionAtUnit(m_Position, m_PositionUnits);
                 transform.rotation = m_Path.EvaluateOrientationAtUnit(m_Position, m_PositionUnits);
+            }
+        }
+        void changePath()
+        {
+            if (Input.GetMouseButton(1))
+            {
+                m_Path = boss_Path;
             }
         }
     }

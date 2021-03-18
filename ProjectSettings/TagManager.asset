@@ -8,6 +8,7 @@ TagManager:
   - Collectible
   - Enemy
   - Rocket
+  - BossPath
   layers:
   - Default
   - TransparentFX
